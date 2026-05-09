@@ -364,43 +364,11 @@ Perfect for:
 
 1. **Awesome Prometheus Alerts (Main Collection)**
    Over 950+ ready-to-use Prometheus alert rules for Kubernetes, Docker, Linux, databases, observability stacks, networking, and more.
-   [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts/?utm_source=chatgpt.com) ([Samber][1])
+   [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts) ([Samber][1])
 
 2. **GitHub Repository – Awesome Prometheus Alerts**
    Source repository containing YAML alert rules and contributions from the community.
-   [awesome-prometheus-alerts GitHub Repo](https://github.com/samber/awesome-prometheus-alerts?utm_source=chatgpt.com) ([GitHub][2])
-
-3. **Docker Container Monitoring Rules**
-   Prebuilt alert rules specifically for Docker containers and cAdvisor monitoring.
-   [Docker Container Alert Rules](https://samber.github.io/awesome-prometheus-alerts/rules?utm_source=chatgpt.com#docker-containers) ([Samber][1])
-
-4. **Basic Resource Monitoring Rules**
-   CPU, RAM, Disk, Node Exporter, SMART monitoring, Proxmox, VMware, Blackbox, and Systemd alerts.
-   [Basic Resource Monitoring Alerts](https://samber.github.io/awesome-prometheus-alerts/rules/basic-resource-monitoring/?utm_source=chatgpt.com) ([Samber][3])
-
-5. **Observability Stack Alerts**
-   Alert rules for Loki, Tempo, Mimir, Thanos, Jaeger, OpenTelemetry, and Promtail.
-   [Observability Alert Rules](https://samber.github.io/awesome-prometheus-alerts/rules/observability/?utm_source=chatgpt.com) ([Samber][4])
-
-6. **Network & Security Monitoring Alerts**
-   Includes SSL expiry, WireGuard, CoreDNS, Vault, cert-manager, SNMP, and Cloudflare alerts.
-   [Network & Security Alert Rules](https://samber.github.io/awesome-prometheus-alerts/rules/network-and-security/?utm_source=chatgpt.com) ([Samber][5])
-
-7. **Data Engineering Alert Rules**
-   Monitoring alerts for Apache Spark, Flink, Hadoop, and distributed data systems.
-   [Data Engineering Alert Rules](https://samber.github.io/awesome-prometheus-alerts/rules/data-engineering/?utm_source=chatgpt.com) ([Samber][6])
-
-8. **Alertmanager Configuration Guide**
-   Alertmanager routing, silencing, grouping, email/slack/webhook configuration examples.
-   [Alertmanager Config Guide](https://samber.github.io/awesome-prometheus-alerts/alertmanager/?utm_source=chatgpt.com) ([Samber][7])
-
-9. **Blackbox Exporter Monitoring Guide**
-   HTTP, HTTPS, ICMP, DNS, and uptime monitoring setup with Prometheus + Grafana.
-   [Blackbox Exporter Guide](https://samber.github.io/awesome-prometheus-alerts/blackbox-exporter/?utm_source=chatgpt.com) ([Samber][7])
-
-10. **Sleep Peacefully – Silence & Maintenance Windows**
-    Time-based alert suppression and maintenance window configuration examples.
-    [Sleep Peacefully Alert Suppression Guide](https://samber.github.io/awesome-prometheus-alerts/sleep-peacefully/?utm_source=chatgpt.com) ([Samber][7])
+   [awesome-prometheus-alerts GitHub Repo](https://github.com/samber/awesome-prometheus-alerts) ([GitHub][2])
 
 ---
 
