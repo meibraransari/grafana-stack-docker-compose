@@ -1,0 +1,66 @@
+apiVersion: 1
+
+datasources:
+  - name: Prometheus
+    type: prometheus
+    editable: true
+    isDefault: true
+    access: proxy
+    url: http://prometheus:9090
+    jsonData:
+      timeInterval: 10s
+      queryTimeout: 30s
+      httpMethod: POST
+
+  # - access: proxy
+  #   basicAuth: false
+  #   # Enable multi-tenancy
+  #   # jsonData:
+  #   #   httpHeaderName1: "X-Scope-OrgID"
+  #   # secureJsonData:
+  #   #   httpHeaderValue1: "docker"
+  #   jsonData:
+  #     timeout: 60
+  #     maxLines: 1000
+  #   #   httpHeaderName1: ""
+  #   # secureJsonData:
+  #   #   httpHeaderValue1: ""
+  #   editable: true
+  #   isDefault: false
+  #   name: loki
+  #   type: loki
+  #   uid: loki
+  #   url: http://loki-gateway
+  #   version: 1
+
+  # - name: InfluxDB
+  #   version: 2
+  #   type: influxdb
+  #   access: proxy
+  #   url: http://influxdb:8086
+  #   jsonData:
+  #     defaultBucket: $DOCKER_INFLUXDB_INIT_BUCKET
+  #     httpMode: POST
+  #     organization: $DOCKER_INFLUXDB_INIT_ORG
+  #     version: Flux
+  #   secureJsonData:
+  #     token: $DOCKER_INFLUXDB_INIT_ADMIN_TOKEN
+
+# ----------------- Unused config
+  # - access: proxy
+  #   basicAuth: false
+  #   editable: true
+  #   isDefault: true
+  #   name: prometheus
+  #   type: prometheus
+  #   uid: prometheus
+  #   url: http://prometheus:9090
+  #   version: 1
+
+  # - name: Loki
+  #   type: loki
+  #   access: proxy
+  #   url: http://loki:3100
+  #   jsonData:
+  #     timeout: 60
+  #     maxLines: 1000

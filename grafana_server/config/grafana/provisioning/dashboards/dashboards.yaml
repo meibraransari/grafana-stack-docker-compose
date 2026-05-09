@@ -1,0 +1,62 @@
+apiVersion: 1
+
+providers:
+ - name: 'Alerts'
+   folder: 'Alerts'
+   type: file
+   options:
+     path: /etc/grafana/provisioning/dashboards/alerts
+
+ - name: 'MySQL'
+   folder: 'MySQL'
+   type: file
+   options:
+     path: /etc/grafana/provisioning/dashboards/mysql
+
+ - name: 'Nginx'
+   folder: 'Nginx'
+   type: file
+   options:
+     path: /etc/grafana/provisioning/dashboards/nginx
+
+ - name: 'Linux'
+   folder: 'Linux'
+   type: file
+   options:
+     path: /etc/grafana/provisioning/dashboards/linux
+
+ - name: 'Postgres'
+   folder: 'Postgres'
+   type: file
+   options:
+     path: /etc/grafana/provisioning/dashboards/postgres
+
+ - name: 'Docker'
+   folder: 'Docker'
+   type: file
+   options:
+     path: /etc/grafana/provisioning/dashboards/docker
+
+ - name: 'Jenkins'
+   folder: 'Jenkins'
+   type: file
+   options:
+     path: /etc/grafana/provisioning/dashboards/jenkins
+
+ - name: 'Logs'
+   folder: 'Logs'
+   type: file
+   options:
+     path: /etc/grafana/provisioning/dashboards/logs
+
+ - name: 'SSH_Logs'
+   folder: 'SSH_Logs'
+   type: file
+   options:
+     path: /etc/grafana/provisioning/dashboards/ssh_logs
+
+ - name: 'Qdrant'
+   folder: 'Qdrant'
+   type: file
+   options:
+     path: /etc/grafana/provisioning/dashboards/qdrant

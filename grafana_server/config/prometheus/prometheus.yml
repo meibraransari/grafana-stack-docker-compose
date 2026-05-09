@@ -1,0 +1,131 @@
+# my global config
+global:
+  scrape_interval: 15s # Set the scrape interval to every 15 seconds. Default is every 1 minute.
+  evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is every 1 minute.
+  # scrape_timeout is set to the global default (10s).
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+            - alertmanager:9093
+        #- targets: ['192.168.1.200:9093']
+# Load rules once and periodically evaluate them according to the global 'evaluation_interval'.
+rule_files:
+#  - rules/rules.yml
+  - rules/google-cadvisor.yml
+  - rules/node-exporter.yml
+
+# A scrape configuration containing exactly one endpoint to scrape:
+# Here it's Prometheus itself.
+scrape_configs:
+  # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
+  # Scrape prometheus metrics
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["10.0.0.4:9090"]
+
+  # Scrape Jenkins metrics
+  - job_name: 'Jenkins_node'
+    scrape_interval: 30s
+    static_configs:
+      - targets: ['10.0.0.4:9100']
+        labels:
+          instance: Jenkins
+
+  - job_name: 'qdrant-cluster-demo'
+    #scheme: https
+    metrics_path: /metrics
+    #bearer_token: "<QDRANT_API_KEY>"
+    static_configs:
+      - targets: ['10.0.0.40:6343', '10.0.0.41:6343', '10.0.0.42:6343']
+        labels:
+          qdrant_source: "demo" # Important for visualization in Grafana
+
+
+
+# - job_name: "loki"
+#   metrics_path: "/metrics"  # Loki's metrics endpoint
+#   static_configs:
+#     - targets: ["loki-gateway:3100"]  # Replace with your Loki's address and port
+# - job_name: 'Grafana'
+#   scrape_interval: 30s
+#   static_configs:
+#     - targets: ['192.168.1.221:9100', '192.168.1.221:8081']
+#       labels:
+#         instance: Grafana
+#   relabel_configs:
+#     - target_label: 'job'
+#       replacement: 'Grafana_Server'
+#     - target_label: 'exporter'
+#       replacement: 'node_exporter'
+#     - target_label: 'instance'
+#       replacement: '192.168.1.221:9100 OCPP and Ankpal Consumers - Dont Stop [PROD]'
+#     - target_label: 'purpose'
+#       replacement: 'monitoring'
+#     - target_label: 'server'
+#       replacement: 'Grafana'
+#     - target_label: 'Owner'
+#       replacement: 'Iansari'
+#     - target_label: 'Environment'
+#       replacement: 'Prod'
+#     - target_label: 'instance_id'
+#       replacement: 'i-07d84a88c6431d4a8'
+
+# - job_name: 'jenkins_web'
+#   metrics_path: /prometheus/
+#   scrape_interval: 300s
+#   scrape_timeout: 30s
+#   # scheme: https
+#   # tls_config:
+#   #   insecure_skip_verify: true
+#   static_configs:
+#     - targets: ["192.168.1.215:8080"]
+# - job_name: 'QA_Server'
+#   #scrape_interval: 5s
+#   scrape_interval: 5m
+#   scrape_timeout: 1m
+#   static_configs:
+#     #- targets: ['192.168.1.207:9100','192.168.1.207:8089', '192.168.1.207:9104']
+#     - targets: ['192.168.1.207:9100','192.168.1.207:9104']
+#       labels:
+#         instance: QA_Server
+# - job_name: 'Telegraf'
+#   static_configs:
+#     - targets: ['54.216.15.173:9125']
+#       labels:
+#         instance: 2.0_Prod
+# - job_name: '2.0_Prod'
+#   scrape_interval: 30s
+#   static_configs:
+#     - targets: ['54.216.15.173:9100']
+#       labels:
+#         instance: 2.0_Prod
+# - job_name: 'Gitlab_Server'
+#   #scrape_interval: 5s
+#   scrape_interval: 5m
+#   scrape_timeout: 1m
+#   static_configs:
+#     #- targets: ['192.168.1.9:9200','192.168.1.9:9100','192.168.1.9:9121','192.168.1.9:9187','192.168.1.9:9168','192.168.1.9:8081','192.168.1.9:8082']
+#     - targets: ['192.168.1.9:9100','192.168.1.9:9121','192.168.1.9:9187','192.168.1.9:8082']
+#       labels:
+#         instance: Gitlab_Server
+# Pushgateway client uses a push method for sending metrics to prometheus server.
+# - job_name: 'pushgateway'
+#   static_configs:
+#     - targets: ['x.x.x.x:9091']
+#   scheme: https  # Make sure Prometheus scrapes over HTTPS
+#   metrics_path: '/metrics'  # The default path to scrape metrics from
+# - job_name: 'pushgateway'
+#   honor_labels: true
+#   scrape_interval: 500ms
+#   static_configs:
+#     - targets: ['pushgateway:9191']
+# - job_name: 'pushgateway'
+#   scrape_interval: 500ms
+#   honor_labels: true
+#   static_configs:
+#     - targets:
+#         - 'pushgateway:9191'
+#         - 'pushgateway2:9192'
+#         - 'pushgateway3:9193'
