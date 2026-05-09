@@ -75,14 +75,14 @@ This component focuses on:
 
 # 🌟 Features
 
-✅ Real-Time Monitoring
-✅ Docker-Based Deployment
-✅ Grafana Dashboards
-✅ Prometheus Metrics Collection
-✅ Alertmanager Notifications
-✅ Persistent Storage Support
-✅ Modular Client/Server Architecture
-✅ Production Ready Monitoring Stack
+- ✅ Real-Time Monitoring
+- ✅ Docker-Based Deployment
+- ✅ Grafana Dashboards
+- ✅ Prometheus Metrics Collection
+- ✅ Alertmanager Notifications
+- ✅ Persistent Storage Support
+- ✅ Modular Client/Server Architecture
+- ✅ Production Ready Monitoring Stack
 
 ---
 
@@ -101,7 +101,7 @@ cd grafana-stack-docker-compose
 
 ```bash
 cd grafana_server
-mkdir -p ./data/{grafana,prometheus} && chmod -R 775 ./data
+mkdir -p ./data/{grafana,prometheus} && chmod -R 777 ./data
 docker compose up -d
 ```
 
