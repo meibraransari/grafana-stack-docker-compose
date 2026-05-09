@@ -150,13 +150,7 @@ GF_SECURITY_ADMIN_PASSWORD=strongpassword
 Create required directories:
 
 ```bash
-mkdir -p ./data/{grafana,prometheus}
-```
-
-Set proper permissions:
-
-```bash
-chmod -R 775 data/
+mkdir -p ./data/{grafana,prometheus} && chmod -R 777 ./data
 ```
 
 ---
