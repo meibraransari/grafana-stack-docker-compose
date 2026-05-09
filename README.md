@@ -21,7 +21,7 @@ This project is organized into separate client and server components to provide 
 | 📁 Directory      | 📄 Documentation                                 | 📝 Description                                         |
 | ----------------- | ------------------------------------------------ | ------------------------------------------------------ |
 | `grafana_server/` | [Open Server README](./grafana_server/README.md) | Grafana, Prometheus, Alertmanager                  |
-| `grafana_client/` | [Open Client README](./grafana_client/README.md) |  node-exporter configuration.                         |
+| `grafana_client/` | [Open Client README](./grafana_client/README.md) |  node-exporter & its configuration.                         |
 ---
 
 # 🧩 Project Components
