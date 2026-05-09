@@ -372,18 +372,6 @@ Perfect for:
 
 ---
 
-### 🌟 Bonus Community Discussions
-
-### Reddit Discussions & Real-World Usage
-
-* [Kubernetes + Grafana Alerting Discussion](https://www.reddit.com/r/kubernetes/comments/1iupvn8/alerting_from_prometheus_and_grafana_with/?utm_source=chatgpt.com) ([Reddit][8])
-
-* [Prometheus Alert Rule Libraries Discussion](https://www.reddit.com/r/PrometheusMonitoring/comments/zs6lok/alerting_rules_libraries_compendiums_or_bundles/?utm_source=chatgpt.com) ([Reddit][9])
-
-* [Grafana Community Alert Rule Additions](https://www.reddit.com/r/grafana/comments/1sl8tm5/300_alerts_added_to_awesomeprometheusalerts/?utm_source=chatgpt.com) ([Reddit][10])
-
-* [Cloud-Native Alert Rules (Tempo/Mimir/Cilium/Jaeger)](https://www.reddit.com/r/kubernetes/comments/1sl8fs5/added_cilium_jaeger_certmanager_envoy_grafana/?utm_source=chatgpt.com) ([Reddit][11])
-
 These resources cover almost everything needed for:
 
 * Docker monitoring 🐳
@@ -396,14 +384,3 @@ These resources cover almost everything needed for:
 * Cloud providers ☁️
 * Alertmanager routing 🚨
 
-[1]: https://samber.github.io/awesome-prometheus-alerts/?utm_source=chatgpt.com "Awesome Prometheus Alerts | Copy-pasteable Prometheus alerting rules"
-[2]: https://github.com/samber/awesome-prometheus-alerts?utm_source=chatgpt.com "GitHub - samber/awesome-prometheus-alerts: 🚨 Collection of Prometheus alerting rules"
-[3]: https://samber.github.io/awesome-prometheus-alerts/rules/basic-resource-monitoring/?utm_source=chatgpt.com "Basic resource monitoring Prometheus Alerts | Awesome Prometheus Alerts"
-[4]: https://samber.github.io/awesome-prometheus-alerts/rules/observability/?utm_source=chatgpt.com "Observability Prometheus Alerts | Awesome Prometheus Alerts"
-[5]: https://samber.github.io/awesome-prometheus-alerts/rules/network-and-security/?utm_source=chatgpt.com "Network and security Prometheus Alerts | Awesome Prometheus Alerts"
-[6]: https://samber.github.io/awesome-prometheus-alerts/rules/data-engineering/?utm_source=chatgpt.com "Data engineering Prometheus Alerts | Awesome Prometheus Alerts"
-[7]: https://samber.github.io/awesome-prometheus-alerts?utm_source=chatgpt.com "Awesome Prometheus Alerts | Copy-pasteable Prometheus alerting rules"
-[8]: https://www.reddit.com/r/kubernetes/comments/1iupvn8?utm_source=chatgpt.com "Alerting from Prometheus and Grafana with kube-prometheus-stack"
-[9]: https://www.reddit.com/r/PrometheusMonitoring/comments/zs6lok?utm_source=chatgpt.com "Alerting rules \"libraries, compendiums, or bundles:\" where can I find a bunch of already-written, useful alerting rules for prometheus?"
-[10]: https://www.reddit.com/r/grafana/comments/1sl8tm5/300_alerts_added_to_awesomeprometheusalerts/?utm_source=chatgpt.com "+300 alerts added to awesome-prometheus-alerts"
-[11]: https://www.reddit.com/r/kubernetes/comments/1sl8fs5/added_cilium_jaeger_certmanager_envoy_grafana/?utm_source=chatgpt.com "Added Cilium, Jaeger, cert-manager, Envoy, Grafana Tempo and Mimir alerting rules to awesome-prometheus-alerts"
