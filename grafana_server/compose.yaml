@@ -27,7 +27,7 @@ services:
     depends_on:
       - prometheus
     volumes:
-      - ${DOCKER_VOLUME_STORAGE:-/mnt/docker-volumes}/grafana_data:/var/lib/grafana
+      - ./data/grafana:/var/lib/grafana
       - ./config/grafana/provisioning/:/etc/grafana/provisioning/
     labels:
       version: "latest"
@@ -59,7 +59,7 @@ services:
       #- ${DOCKER_VOLUME_STORAGE:-/mnt/docker-volumes}/prometheus/etc/prometheus:/etc/prometheus
       #- ${DOCKER_VOLUME_STORAGE:-/mnt/docker-volumes}/prometheus/prometheus:/prometheus
       - ./config/prometheus/:/etc/prometheus/
-      - ${DOCKER_VOLUME_STORAGE:-/mnt/docker-volumes}/prometheus_data/:/prometheus/
+      - ./data/prometheus:/prometheus/
       #    environment:
       #      - VIRTUAL_HOST=prometheus
     labels:

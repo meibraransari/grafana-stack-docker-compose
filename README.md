@@ -101,6 +101,7 @@ cd grafana-stack-docker-compose
 
 ```bash
 cd grafana_server
+mkdir -p ./data/{grafana,prometheus} && chmod -R 775 ./data
 docker compose up -d
 ```
 
