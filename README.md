@@ -1,6 +1,6 @@
 # 🚀 Grafana Monitoring Platform
 
-Welcome to the **Grafana Monitoring Platform** repository.  
+
 This project is organized into separate client and server components to provide a scalable, maintainable, and production-ready monitoring ecosystem using Grafana and related observability tools.
 
 ---
