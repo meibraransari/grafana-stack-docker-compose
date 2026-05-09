@@ -126,6 +126,19 @@ docker compose up -d
 
 ---
 
+# 🎯 Final Notes
+
+This repository provides a scalable observability platform suitable for:
+
+* Homelabs 🏠
+* VPS Monitoring ☁️
+* Enterprise Infrastructure 🏢
+* Kubernetes Clusters ☸️
+* Docker Environments 🐳
+
+Happy Monitoring 🚀
+
+
 # ❤️ Contributing
 
 Contributions are welcome!
@@ -145,21 +158,6 @@ Feel free to:
 Licensed under the MIT License.
 
 ---
-
-# 🎯 Final Notes
-
-This repository provides a scalable observability platform suitable for:
-
-* Homelabs 🏠
-* VPS Monitoring ☁️
-* Enterprise Infrastructure 🏢
-* Kubernetes Clusters ☸️
-* Docker Environments 🐳
-
-Happy Monitoring 🚀
-
-
-
 ## 💼 Connect with Me 👇😊
 
 *   🔥 [**YouTube**](https://www.youtube.com/@DevOpsinAction?sub_confirmation=1)
