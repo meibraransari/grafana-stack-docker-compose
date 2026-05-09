@@ -279,8 +279,8 @@ Benefits:
 * Secure authentication
 * Better routing & security
 
-## Nginx Proxy Manager Guide
-[Nginx Proxy Manager Guide](https://www.youtube.com/playlist?list=PL5Afhqcc17s2UCcuEyFnTMHbVkxl8EG_7)
+Nginx Proxy Manager Guide
+- [Nginx Proxy Manager Guide](https://www.youtube.com/playlist?list=PL5Afhqcc17s2UCcuEyFnTMHbVkxl8EG_7)
 ---
 
 ## 👥 Manage Users Carefully
