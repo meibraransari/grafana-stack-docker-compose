@@ -23,26 +23,24 @@ scrape_configs:
   # Scrape prometheus metrics
   - job_name: "prometheus"
     static_configs:
-      - targets: ["10.0.0.4:9090"]
+      - targets: ["prometheus:9090"]
 
-  # Scrape Jenkins metrics
-  - job_name: 'Jenkins_node'
-    scrape_interval: 30s
-    static_configs:
-      - targets: ['10.0.0.4:9100']
-        labels:
-          instance: Jenkins
+# # Scrape Jenkins metrics
+# - job_name: 'Jenkins_node'
+#   scrape_interval: 30s
+#   static_configs:
+#     - targets: ['10.0.0.4:9100']
+#       labels:
+#         instance: Jenkins
 
-  - job_name: 'qdrant-cluster-demo'
-    #scheme: https
-    metrics_path: /metrics
-    #bearer_token: "<QDRANT_API_KEY>"
-    static_configs:
-      - targets: ['10.0.0.40:6343', '10.0.0.41:6343', '10.0.0.42:6343']
-        labels:
-          qdrant_source: "demo" # Important for visualization in Grafana
-
-
+# - job_name: 'qdrant-cluster-demo'
+#   #scheme: https
+#   metrics_path: /metrics
+#   #bearer_token: "<QDRANT_API_KEY>"
+#   static_configs:
+#     - targets: ['10.0.0.40:6343', '10.0.0.41:6343', '10.0.0.42:6343']
+#       labels:
+#         qdrant_source: "demo" # Important for visualization in Grafana
 
 # - job_name: "loki"
 #   metrics_path: "/metrics"  # Loki's metrics endpoint
