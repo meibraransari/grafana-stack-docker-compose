@@ -22,6 +22,26 @@ This project is organized into separate client and server components to provide 
 | ----------------- | ------------------------------------------------ | ------------------------------------------------------ |
 | `grafana_server/` | [Open Server README](./grafana_server/README.md) | Grafana, Prometheus, Alertmanager                  |
 | `grafana_client/` | [Open Client README](./grafana_client/README.md) |  node-exporter & its configuration.                         |
+
+---
+
+# 🚀 Quick Start
+
+## Clone Repository
+
+```bash
+git clone https://github.com/meibraransari/grafana-stack-docker-compose.git
+cd grafana-stack-docker-compose
+```
+
+## Start Monitoring Stack
+
+```bash
+cd grafana_server
+mkdir -p ./data/{grafana,prometheus} && chmod -R 777 ./data
+docker compose up -d
+```
+
 ---
 
 # 🧩 Project Components
@@ -82,27 +102,6 @@ This component focuses on:
 - ✅ Persistent Storage Support
 - ✅ Modular Client/Server Architecture
 - ✅ Production Ready Monitoring Stack
-
----
-
-# 🚀 Quick Start
-
-## Clone Repository
-
-```bash
-git clone https://github.com/meibraransari/grafana-stack-docker-compose.git
-cd grafana-stack-docker-compose
-```
-
----
-
-## Start Monitoring Stack
-
-```bash
-cd grafana_server
-mkdir -p ./data/{grafana,prometheus} && chmod -R 777 ./data
-docker compose up -d
-```
 
 ---
 
