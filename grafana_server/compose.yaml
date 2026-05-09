@@ -93,9 +93,9 @@ services:
       version: "latest"
       org.label-schema.group: "monitoring"
       description: "Deployed on 09-05-2026"
-  node-exporter:
+  nodeexporter:
     image: prom/node-exporter:latest
-    container_name: node-exporter
+    container_name: nodeexporter
     restart: unless-stopped
     user: 1001:1001
     ports:
