@@ -34,7 +34,7 @@ git clone https://github.com/meibraransari/grafana-stack-docker-compose.git
 cd grafana-stack-docker-compose
 ```
 
-## Start Monitoring Stack
+## Start Server Stack
 
 ```bash
 cd grafana_server
