@@ -25,6 +25,29 @@ scrape_configs:
     static_configs:
       - targets: ["prometheus:9090"]
 
+  - job_name: 'Grafana'
+    scrape_interval: 30s
+    static_configs:
+      - targets: ['nodeexporter:9100', 'cadvisor:8080']
+        labels:
+          instance: Grafana
+    relabel_configs:
+      - target_label: 'job'
+        replacement: 'Grafana_Server'
+      - target_label: 'exporter'
+        replacement: 'node_exporter'
+      - target_label: 'instance'
+        replacement: 'Grafana Server - Dont Stop [PROD]'
+      - target_label: 'purpose'
+        replacement: 'monitoring'
+      - target_label: 'server'
+        replacement: 'Grafana'
+      - target_label: 'Owner'
+        replacement: 'Iansari'
+      - target_label: 'Environment'
+        replacement: 'Prod'
+    
+
 # # Scrape Jenkins metrics
 # - job_name: 'Jenkins_node'
 #   scrape_interval: 30s
@@ -46,29 +69,7 @@ scrape_configs:
 #   metrics_path: "/metrics"  # Loki's metrics endpoint
 #   static_configs:
 #     - targets: ["loki-gateway:3100"]  # Replace with your Loki's address and port
-# - job_name: 'Grafana'
-#   scrape_interval: 30s
-#   static_configs:
-#     - targets: ['192.168.1.221:9100', '192.168.1.221:8081']
-#       labels:
-#         instance: Grafana
-#   relabel_configs:
-#     - target_label: 'job'
-#       replacement: 'Grafana_Server'
-#     - target_label: 'exporter'
-#       replacement: 'node_exporter'
-#     - target_label: 'instance'
-#       replacement: '192.168.1.221:9100 OCPP and Ankpal Consumers - Dont Stop [PROD]'
-#     - target_label: 'purpose'
-#       replacement: 'monitoring'
-#     - target_label: 'server'
-#       replacement: 'Grafana'
-#     - target_label: 'Owner'
-#       replacement: 'Iansari'
-#     - target_label: 'Environment'
-#       replacement: 'Prod'
-#     - target_label: 'instance_id'
-#       replacement: 'i-07d84a88c6431d4a8'
+
 
 # - job_name: 'jenkins_web'
 #   metrics_path: /prometheus/
