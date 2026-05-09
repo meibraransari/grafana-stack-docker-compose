@@ -364,11 +364,11 @@ Perfect for:
 
 1. **Awesome Prometheus Alerts (Main Collection)**
    Over 950+ ready-to-use Prometheus alert rules for Kubernetes, Docker, Linux, databases, observability stacks, networking, and more.
-   [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts) ([Samber][1])
+   [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts)
 
 2. **GitHub Repository – Awesome Prometheus Alerts**
    Source repository containing YAML alert rules and contributions from the community.
-   [awesome-prometheus-alerts GitHub Repo](https://github.com/samber/awesome-prometheus-alerts) ([GitHub][2])
+   [awesome-prometheus-alerts GitHub Repo](https://github.com/samber/awesome-prometheus-alerts)
 
 ---
 
