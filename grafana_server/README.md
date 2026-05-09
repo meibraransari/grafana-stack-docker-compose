@@ -358,15 +358,23 @@ Perfect for:
 
 ### 🔥 Top Useful Links
 
-1. **Grafana Official Documentation**
+1. **Awesome Prometheus Alerts (Main Collection)**
+   Over 950+ ready-to-use Prometheus alert rules for Kubernetes, Docker, Linux, databases, observability stacks, networking, and more.
+   [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts?utm_source=chatgpt.com)
+
+2. **GitHub Repository – Awesome Prometheus Alerts**
+   Source repository containing YAML alert rules and contributions from the community.
+   [awesome-prometheus-alerts GitHub Repo](https://github.com/samber/awesome-prometheus-alerts?utm_source=chatgpt.com)
+
+3. **Grafana Official Documentation**
    Official docs for dashboards, alerting, Loki, Tempo, provisioning, and observability setup.
    [Grafana Documentation](https://grafana.com/docs/)
 
-2. **Prometheus Official Documentation**
+4. **Prometheus Official Documentation**
    Official documentation for Prometheus monitoring, querying (PromQL), exporters, and alerting rules.
    [Prometheus Documentation](https://prometheus.io/docs/)
 
-3. **Alertmanager Official Documentation**
+5. **Alertmanager Official Documentation**
    Official docs for configuring routing, silences, grouping, receivers, and notification integrations.
    [Alertmanager Documentation](https://prometheus.io/docs/alerting/latest/alertmanager/)
 
