@@ -10,7 +10,7 @@ This project is organized into separate client and server components to provide 
 ```text
 .
 ├── grafana_client/   # node-exporter configuration..
-├── grafana_server/   # Grafana, Prometheus, Alertmanager, docker-compose.yml and exporters
+├── grafana_server/   # Grafana, Prometheus, Alertmanager
 └── README.md         # Project documentation
 ````
 
@@ -18,10 +18,10 @@ This project is organized into separate client and server components to provide 
 
 # 📑 Project Index
 
-| 📁 Directory      | 📄 Documentation                                 | 📝 Description                                                                                   |
-| ----------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
-| `grafana_server/` | [Open Server README](./grafana_server/README.md) | The `grafana_server` module contains the backend monitoring stack and infrastructure services. |
-| `grafana_client/` | [Open Client README](./grafana_client/README.md) | Prometheus, Alertmanager, Docker Compose stack, exporters, and backend monitoring infrastructure   |
+| 📁 Directory      | 📄 Documentation                                 | 📝 Description                                         |
+| ----------------- | ------------------------------------------------ | ------------------------------------------------------ |
+| `grafana_server/` | [Open Server README](./grafana_server/README.md) | Grafana, Prometheus, Alertmanager                  |
+| `grafana_client/` | [Open Client README](./grafana_client/README.md) |  node-exporter configuration.                         |
 ---
 
 # 🧩 Project Components
