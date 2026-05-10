@@ -12,7 +12,7 @@ services:
       - 3000:3000
     environment:
       - VIRTUAL_HOST=grafana
-      - GF_SERVER_ROOT_URL=https://grafana.tokenlinx.com
+      - GF_SERVER_ROOT_URL=https://grafana.localhost.com
       - GF_SECURITY_ADMIN_USER=${GRAFANA_ADMIN_USERNAME:-admin}
       - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_ADMIN_PASSWORD:-admin}
       - GF_USERS_ALLOW_SIGN_UP=false

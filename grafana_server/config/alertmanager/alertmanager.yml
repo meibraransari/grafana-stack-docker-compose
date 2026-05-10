@@ -7,7 +7,7 @@
 
 global:
   smtp_smarthost: 'smtp.sendgrid.net:587'
-  smtp_from: 'noreply@tokenlinx.com'
+  smtp_from: 'noreply@localhost.com'
   smtp_auth_username: 'apikey'
   smtp_auth_password: 'my_secret_key'
   smtp_require_tls: true

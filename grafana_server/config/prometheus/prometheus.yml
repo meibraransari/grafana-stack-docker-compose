@@ -52,7 +52,7 @@ scrape_configs:
 # - job_name: 'Jenkins_node'
 #   scrape_interval: 30s
 #   static_configs:
-#     - targets: ['10.0.0.4:9100']
+#     - targets: ['192.168.1.4:9100']
 #       labels:
 #         instance: Jenkins
 
@@ -61,7 +61,7 @@ scrape_configs:
 #   metrics_path: /metrics
 #   #bearer_token: "<QDRANT_API_KEY>"
 #   static_configs:
-#     - targets: ['10.0.0.40:6343', '10.0.0.41:6343', '10.0.0.42:6343']
+#     - targets: ['192.168.1.40:6343', '192.168.1.41:6343', '192.168.1.42:6343']
 #       labels:
 #         qdrant_source: "demo" # Important for visualization in Grafana
 
