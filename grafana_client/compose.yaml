@@ -1,0 +1,68 @@
+services:
+  nodeexporter:
+    # Node exporter of current host
+    image: prom/node-exporter:latest
+    container_name: nodeexporter
+    hostname: nodeexporter
+    restart: unless-stopped
+    ports:
+      - 9100:9100
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+    command:
+      - '--path.procfs=/host/proc'
+      - '--path.rootfs=/rootfs'
+      - '--path.sysfs=/host/sys'
+      - '--collector.filesystem.ignored-mount-points=^/(sys|proc|dev|host|etc)($$|/)'
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50" # Max 0.5 CPU core
+          memory: 256M # Max 256 MB RAM
+        reservations:
+          cpus: "0.10" # Reserved CPU
+          memory: 64M # Reserved RAM
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    labels:
+      version: "latest"
+      org.label-schema.group: "monitoring"
+      description: "Deployed on 13-05-2026"
+  cadvisor:
+    # cadvisor of current host
+    #image: gcr.io/google-containers/cadvisor
+    image: gcr.io/cadvisor/cadvisor:latest
+    container_name: cadvisor
+    hostname: cadvisor
+    restart: unless-stopped
+    ports:
+      - 8080:8080
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker:/var/lib/docker:ro
+      - /cgroup:/cgroup:ro #doesn't work on MacOS only for Linux
+      - /dev/disk/:/dev/disk:ro
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: 512M
+        reservations:
+          cpus: "0.10"
+          memory: 128M
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    labels:
+      version: "latest"
+      org.label-schema.group: "monitoring"
+      description: "Deployed on 13-05-2026"
